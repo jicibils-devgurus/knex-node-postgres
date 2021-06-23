@@ -180,6 +180,15 @@ npm run test
 docker build -t devgurus/fastify-microservice-template .
 docker run -it --entrypoint sh -p 4444:4444 --env HOST=0.0.0.0 devgurus/fastify-microservice-template
 ```
+### KNEX migrations
+```shell
+knex migrate:latest
+knex migrate:rollback
+```
+### KNEX seeds
+```shell
+knex seed:run
+``` 
 ### Example request
 ```shell
 curl --location --request GET 'http://localhost:4444/?queryOne=test'
