@@ -42,7 +42,7 @@ module.exports = fastifyPlugin((fastify, opts, next) => {
       // const db = knex({
       //   client: 'pg',
       //   Example: connection: 'postgresql://postgres:hunter3@localhost/bigdata03',
-      //   connection: process.env.DB_CONNECTION,
+      //   Example: connection: process.env.DB_CONNECTION,
       // });
 
       const pgConfig = {
